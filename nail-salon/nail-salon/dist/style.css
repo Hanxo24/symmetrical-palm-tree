@@ -1,0 +1,151 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.header-container {
+    background: url('https://i.ibb.co/GsTBNh0/nail-salon-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+    background: white;
+    color: #e91e63;
+    outline: none;
+}
+
+header nav ul li a[aria-current="page"] {
+    background: white;
+    color: #e91e63;
+}
+
+/* Main Section Styles */
+main {
+    padding: 2em;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Design Gallery */
+.design-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.design-item {
+    margin: 1em;
+    text-align: center;
+    max-width: 300px;
+}
+
+.design-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 2rem;
+    margin: 0 0.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e91e63;
+}
+
+/* About Us Section */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h3 {
+    color: #e91e63;
+    margin-top: 2em;
+}
+
+.about-content p {
+    margin-top: 1em;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
